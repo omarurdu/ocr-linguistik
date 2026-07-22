@@ -1,0 +1,8 @@
+ollama
+pillow
+pandas
+tabulate
+python-Levenshtein
+jiwer
+dinglehopper
+python-dotenv
