@@ -19,6 +19,8 @@ PROMPT = "Extrahiere den gesamten sichtbaren Text aus diesem Bild, exakt und ohn
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 IMAGES_DIR = PROJECT_ROOT / "data" / "images"
 OUTPUT_DIR = PROJECT_ROOT / "output"
+TRANSCRIPTIONS_DIR = OUTPUT_DIR / "transcriptions"
+TRANSCRIPTIONS_DIR.mkdir(parents=True, exist_ok=True)
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -112,7 +114,7 @@ for model in MODELS:
 
             # Transkription je Bild in output/ ablegen, z.B. output/anzeige01__qwen3-vl_2b.txt
             model_slug = model.replace(":", "_").replace("/", "_")
-            out_path = OUTPUT_DIR / f"{image_path.stem}__{model_slug}.txt"
+            out_path = TRANSCRIPTIONS_DIR / f"{image_path.stem}__{model_slug}.txt"
             out_path.write_text(text, encoding="utf-8")
 
             results.append({
