@@ -11,9 +11,13 @@ MODELS = [
     "qwen3-vl:2b",
     "glm-ocr:latest",
     "deepseek-ocr:3b",
-    "gemma4:e4b"
+    "gemma4:e4b",
+    "medgemma:4b",
+    "minicpm-v4.5:8b",
+    "qwen3-vl:8b",
+    "moondream:1.8b"
 ]
-PROMPT = "Extrahiere den gesamten sichtbaren Text aus diesem Bild, exakt und ohne Kommentar."
+PROMPT = "Transkribiere den gesamten sichtbaren Text auf diesem Bild, exakt und ohne Kommentar oder Zusätze."
 
 # Alle Pfade relativ zur Projektwurzel (eine Ebene über src/)
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
