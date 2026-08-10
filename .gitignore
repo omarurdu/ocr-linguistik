@@ -7,3 +7,7 @@ __pycache__/
 
 /hausarbeit/
 /output/
+runs/
+
+modelle.json
+modelle.md

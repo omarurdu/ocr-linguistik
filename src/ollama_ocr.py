@@ -7,15 +7,13 @@ from pathlib import Path
 # die Reihenfolge ist dank Entladen zwischen den Modellen aber egal).
 MODELS = [
     "qwen3-vl:4b",
-    "maternion/lightonocr-2:1b",
-    "qwen3-vl:2b",
-    "glm-ocr:latest",
-    "deepseek-ocr:3b",
-    "gemma4:e4b",
-    "medgemma:4b",
-    "minicpm-v4.5:8b",
     "qwen3-vl:8b",
-    "moondream:1.8b"
+    "gemma4:e4b",
+    "qwen3.5:4b",
+    "maternion/lightonocr-2:1b",
+    "glm-ocr:bf16",
+    "deepseek-ocr:3b",
+    "minicpm-v4.5:8b",
 ]
 PROMPT = "Transkribiere den gesamten sichtbaren Text auf diesem Bild, exakt und ohne Kommentar oder Zusätze."
 
@@ -109,7 +107,16 @@ for model in MODELS:
                 options={
                     "temperature": 0,   # greedy -> deterministische Transkription
                     "seed": 42,         # nur bei temperature>0 wirksam, aber schadet nicht
+                    "top_k": 1,                 # bei greedy wirkungslos, nur zur Dokumentation
+                    "top_p": 1.0,
+                    "repeat_penalty": 1.0,      # Ollama-Default 1.1 -> bestraft legitime Wiederholungen
+                    "repeat_last_n": 0,
+                    "presence_penalty": 0.0,    # qwen3.5 bringt 1.5 als Modell-Default mit
+                    "frequency_penalty": 0.0,
+                    "num_predict": 4096,
+
                 },
+                think=False,
             )
             
 
