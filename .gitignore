@@ -2,8 +2,11 @@
 env/
 venv/
 
+
 __pycache__/
 *.pyc
+
+.claude/
 
 /hausarbeit/
 /output/
