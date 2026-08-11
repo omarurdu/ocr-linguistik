@@ -18,7 +18,7 @@ wie viel Nachbearbeitung ein Modell braucht, um brauchbar zu sein.
 
 WICHTIG – was die Normalisierung bewusst NICHT anfasst:
   - langes ſ, Ligaturen, k/t, n/u  -> genau das ist der Messgegenstand (Typ A)
-  - historische Orthografie (Thür/Tür, Cigarren/Zigarren)  -> Typ C
+  - historische Orthografie (z.B. Thür/Tür, Cigarren/Zigarren)  -> Typ C
   - Groß-/Kleinschreibung (LOWERCASE = False)  -> Teil der Transkription
 Diese Artefakte dürfen nicht wegnormalisiert werden, sonst misst man nichts mehr.
 """
@@ -26,7 +26,6 @@ Diese Artefakte dürfen nicht wegnormalisiert werden, sonst misst man nichts meh
 import re
 import subprocess
 import unicodedata
-from difflib import SequenceMatcher
 from pathlib import Path
 
 import jiwer
@@ -47,7 +46,6 @@ for d in (METRICS_DIR, NORMALIZED_DIR, DINGLEHOPPER_DIR):
 ENCODING = "utf-8"
 LOWERCASE = False          # Fraktur: Groß-/Kleinschreibung gehört zur Transkription
 DEDUPLICATE = True         # doppelt ausgegebene Blöcke (z.B. GLM) zusammenfassen
-DEDUP_THRESHOLD = 0.90     # ab welcher Ähnlichkeit zweier Hälften dedupliziert wird
 SAVE_HTML_DIFF_REPORTS = True
 
 
@@ -81,17 +79,14 @@ def normalize(text: str) -> str:
     return text
 
 
-def deduplicate(text: str) -> tuple[str, bool]:
-    """Gibt ein Modell denselben Text zweimal aus (z.B. Klartext + Markdown-Kopie),
-    wird nur die erste Hälfte behalten. Rückgabe: (text, wurde_dedupliziert)."""
-    mid = len(text) // 2
-    first, second = text[:mid].strip(), text[mid:].strip()
-    if not first or not second:
-        return text, False
-    ratio = SequenceMatcher(None, first, second).ratio()
-    if ratio >= DEDUP_THRESHOLD:
-        return first, True
-    return text, False
+def deduplicate(text: str) -> tuple[str, int]:
+    """Wiederholt ein Modell denselben Block mehrfach, wird nur der erste behalten.
+    Rückgabe: (bereinigter Text, Anzahl Blockwiederholungen; 1 = keine)."""
+    anchor = text[:60]
+    n = text.count(anchor)
+    if n <= 1:
+        return text, 1
+    return text[:text.find(anchor, 1)].strip(), n
 
 
 # --- Hilfsfunktionen ----------------------------------------------------------
@@ -154,9 +149,9 @@ def main() -> None:
 
         gold_norm = normalize(gold_raw)
         hyp_norm = normalize(hyp_raw)
-        was_deduped = False
+        wiederholungen = 1
         if DEDUPLICATE:
-            hyp_norm, was_deduped = deduplicate(hyp_norm)
+            hyp_norm, wiederholungen = deduplicate(hyp_norm)
 
         # Normalisierte Texte sichern -> nachvollziehbar, was tatsächlich gemessen wurde
         norm_hyp_path = NORMALIZED_DIR / f"{txt_path.stem}.txt"
@@ -171,13 +166,12 @@ def main() -> None:
                 "image": image_stem,
                 "stufe": level,
                 **metrics(g, h),
-                "dedupliziert": was_deduped if level == "norm" else False,
-            })
+                "wiederholungen": wiederholungen,            })
 
         if SAVE_HTML_DIFF_REPORTS:
             save_html_diff_report(gold_norm_path, norm_hyp_path, txt_path.stem)
 
-        flag = "  [dedupliziert]" if was_deduped else ""
+        flag = f"  [{wiederholungen}x wiederholt]" if wiederholungen > 1 else ""
         roh, norm = rows[-2], rows[-1]
         print(f"{model_slug:30s} {image_stem:12s} "
               f"roh CER {roh['cer_dinglehopper']:.4f} WER {roh['wer_dinglehopper']:.4f}  ->  "

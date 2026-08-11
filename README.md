@@ -69,7 +69,7 @@ curl -fsSL https://ollama.com/install.sh | sh
 ollama pull qwen3-vl:4b
 ollama pull qwen3-vl:2b
 ollama pull maternion/lightonocr-2:1b
-ollama pull glm-ocr:latest
+ollama pull glm-ocr:bf16
 ollama pull deepseek-ocr:3b
 ollama pull gemma4:e4b
 ```

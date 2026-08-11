@@ -22,8 +22,8 @@ OLLAMA = "http://localhost:11434"
 AUSGABE = Path(".")
 
 MODELS = [
-    "qwen3-vl:4b",
-    "qwen3-vl:8b",
+    "qwen3-vl:4b-instruct",
+    "qwen3-vl:8b-instruct",
     "gemma4:e4b",
     "qwen3.5:4b",
     "maternion/lightonocr-2:1b",
