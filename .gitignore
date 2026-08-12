@@ -9,8 +9,4 @@ __pycache__/
 .claude/
 
 /hausarbeit/
-/output/
 runs/
-
-modelle.json
-modelle.md
