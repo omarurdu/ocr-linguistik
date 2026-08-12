@@ -66,6 +66,7 @@ from dinglehopper import seq_align
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 METRICS_DIR = PROJECT_ROOT / "output" / "metrics"
 NORMALIZED_DIR = METRICS_DIR / "normalized"
+TYPOLOGIE_CSV = PROJECT_ROOT / "data" / "typologie.csv"   # Handklassifikation
 ENCODING = "utf-8"
 KONTEXT_TOKEN = 3                 # Gold-Woerter links und rechts des Fehlers
 VERSCHIEBUNG_AEHNLICHKEIT = 0.9   # ab wann gilt ein Block als nur verschoben
@@ -257,6 +258,23 @@ def rekonstruiere(gold_tokens: list[str], abschnitte: list[tuple]) -> list[str]:
     return ausgabe
 
 
+def lade_typologie() -> pd.DataFrame | None:
+    """Liest die Handklassifikation aus data/typologie.csv.
+
+    Sie liegt bewusst AUSSERHALB von output/: fehlerliste.csv wird bei jedem
+    Lauf neu geschrieben: stuende die Klassifikation dort, waere sie nach dem
+    naechsten Lauf weg. Geschluesselt wird ueber (image, gold, hypothese,
+    verschoben) - 'verschoben' muss mit hinein, weil derselbe Fehlertext je
+    nach Verschiebung anders zu werten ist: 'ECEKA' -> '' ist bei drei
+    Modellen eine echte Auslassung (E), bei fuenf nur eine Umstellung (B).
+    """
+    if not TYPOLOGIE_CSV.exists():
+        return None
+    t = pd.read_csv(TYPOLOGIE_CSV, keep_default_na=False)
+    t["verschoben"] = t.verschoben.astype(str).str.lower() == "true"
+    return t
+
+
 def kontext(gold_tokens: list[str], start: int, laenge: int) -> str:
     """Gold-Umgebung des Fehlers, Fundstelle in [[...]] markiert."""
     links = " ".join(gold_tokens[max(0, start - KONTEXT_TOKEN):start])
@@ -324,8 +342,7 @@ def main() -> None:
             for r in modell_rows:
                 r["typ_vorschlag"], r["regel"] = klassifiziere(
                     r["gold"], r["hypothese"], r["art"], bool(r["verschiebung"]))
-                r["typ"] = ""          # <- von Hand: A/B/C/D/E
-                r["bemerkung"] = ""    # <- optional
+                r["verschoben"] = bool(r["verschiebung"])
             fehler_rows.extend(modell_rows)
 
             # Die Matrix entsteht NUR aus Substitutionsabschnitten, also dort,
@@ -372,6 +389,17 @@ def main() -> None:
     df_f["n_modelle"] = df_f.groupby(["image", "gold", "hypothese"])["model"] \
                             .transform("nunique")
 
+    # Handklassifikation einmischen (Spalten 'typ' und 'bemerkung')
+    typologie = lade_typologie()
+    if typologie is None:
+        df_f["typ"] = ""
+        df_f["bemerkung"] = ""
+    else:
+        schluessel = ["image", "gold", "hypothese", "verschoben"]
+        df_f = df_f.merge(typologie[schluessel + ["typ", "bemerkung"]],
+                          on=schluessel, how="left")
+        df_f[["typ", "bemerkung"]] = df_f[["typ", "bemerkung"]].fillna("")
+
     spalten = ["image", "model", "gold_pos", "gold", "hypothese", "art",
                "kontext", "zeichen_ops", "n_modelle", "verschiebung",
                "typ_vorschlag", "regel", "typ", "bemerkung"]
@@ -395,15 +423,33 @@ def main() -> None:
     print(f"{len(df_f)} Fehler        -> {METRICS_DIR / 'fehlerliste.csv'}")
     print(f"{len(matrix)} Verwechslungen -> {METRICS_DIR / 'konfusionsmatrix.csv'}")
 
-    offen = (df_f.typ_vorschlag == "").sum()
-    print(f"\nVorklassifikation: {len(df_f) - offen} von {len(df_f)} Zeilen haben "
-          f"einen Vorschlag, {offen} bleiben Handarbeit.")
-    print("Vorschlaege je Regel (bitte stichprobenartig gegenlesen):")
-    for (typ, regel), n in df_f[df_f.typ_vorschlag != ""] \
-            .groupby(["typ_vorschlag", "regel"]).size().items():
-        print(f"  {typ}  {regel:18s} {n:4d}")
+    ohne_typ = (df_f.typ == "").sum()
+    if ohne_typ:
+        print(f"\n! {ohne_typ} Zeilen ohne Eintrag in {TYPOLOGIE_CSV.name} "
+              f"- dort ergaenzen, sonst fehlen sie in der Auswertung:")
+        for (g, h), n in (df_f[df_f.typ == ""].groupby(["gold", "hypothese"])
+                          .size().sort_values(ascending=False).head(10).items()):
+            print(f"    {n:3d}x  {g[:40]!r} -> {h[:40]!r}")
+    else:
+        print(f"\nTypologie vollstaendig: alle {len(df_f)} Zeilen klassifiziert.")
 
-    print("\nTypologie zum Ausfuellen der Spalte 'typ':")
+    print("\nFehlertypen je Modell:")
+    kreuz = pd.crosstab(df_f.model, df_f.typ)
+    kreuz["gesamt"] = kreuz.sum(axis=1)
+    print(kreuz.sort_values("gesamt").to_string())
+
+    # Wo weicht die Handklassifikation vom automatischen Vorschlag ab? Das sind
+    # die Stellen, an denen eine Regel zu grob greift - lohnt den Blick.
+    strittig = df_f[(df_f.typ != "") & (df_f.typ_vorschlag != "")
+                    & (df_f.typ != df_f.typ_vorschlag)]
+    if len(strittig):
+        print(f"\nHandklassifikation weicht in {len(strittig)} Zeilen vom "
+              f"Vorschlag ab:")
+        for (g, h, v, t), n in (strittig.groupby(
+                ["gold", "hypothese", "typ_vorschlag", "typ"]).size().items()):
+            print(f"  {n:3d}x  {g[:26]!r} -> {h[:26]!r}   {v} -> {t}")
+
+    print("\nTypologie:")
     for k, v in TYPOLOGIE.items():
         print(f"  {k}  {v}")
 

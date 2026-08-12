@@ -1,0 +1,179 @@
+image,gold,hypothese,verschoben,typ,bemerkung
+anzeige01,,FABRIKO ŽENKLAS AUŠRA,True,B,Verschiebung: Block steht an anderer Stelle
+anzeige01,Aušra,Ausra,False,D,
+anzeige01,FABRIKO ŽENKLAS,Likor- und Schnaps-Fabrik,False,B,Alignment-Artefakt derselben Verschiebung wie die Folgezeile
+anzeige01,FABRIKO ŽENKLAS „AUŠRA“,,False,E,
+anzeige01,FABRIKO ŽENKLAS „AUŠRA“,,True,B,Verschiebung: Block steht an anderer Stelle
+anzeige01,Likör- und Schnaps-Fabrik „AUŠRA“ Telegr.-Adr.:,FABRIKO ŽENKLAS AUŠRA Teleg.-Adr.:,False,B,"Gegenstueck zur verschobenen Logo-Inschrift; ein Fehler, zwei Zeilen"
+anzeige01,Telegr.-Adr.:,Telegr.-Addr.:,False,E,"strittig: A denkbar; 'Addr.' ist keine Frakturverwechslung, sondern die gelaeufigere Abkuerzung"
+anzeige01,„AUŠRA“,",,AUŠRA“",False,B,
+anzeige01,„AUŠRA“,„AUSRA“,False,D,
+anzeige02,(Der,( Der,False,B,
+anzeige02,Anfertigung,2nfertigung,False,A,
+anzeige02,Anfertigung,Unfertigung,False,A,
+anzeige02,"Artikel,","2rtitel,",False,A,
+anzeige02,"Artikel,","Artifel,",False,A,
+anzeige02,Ausrüstung,Ausruftung,False,A,
+anzeige02,Ausrüstung,Zusriftung,False,A,
+anzeige02,Erzeugnissen,Erzeugniffen,False,A,
+anzeige02,Erzeugnissen,Erzeugnifien,False,A,
+anzeige02,Export,Erport,False,A,
+anzeige02,Fabrik,Fabrif,False,A,
+anzeige02,Fabrik,Fabrift,False,A,
+anzeige02,Herstellung,5erstellung,False,A,
+anzeige02,Herstellung,Herftellung,False,A,
+anzeige02,Industrie,Induftrie,False,A,
+anzeige02,Industrie-,Induftrie-,False,A,
+anzeige02,Industrie-,Industrie,False,B,
+anzeige02,Kunst-Klischees.,Kunft-Klifchees.,False,A,
+anzeige02,Kunst-Klischees.,Kunft-Klifches.,False,A,
+anzeige02,Kunst-Klischees.,Kunst-Klishees.,False,A,
+anzeige02,Kunst-Photochemiegraphie,Kunft-Photochemiegraphie,False,A,
+anzeige02,Kunst-Photochemiegraphie,Kunst-Photochemie,False,E,
+anzeige02,Landwirtschafts- Zeitschrift,Landwirtfchafts-Zeitschrift,False,A,zusaetzlich Trennung am Zeilenende (B)
+anzeige02,Litauische,Litauifche,False,A,
+anzeige02,"Maschinen,","Mafchinen,",False,A,
+anzeige02,"Maschinen,","Mächinen,",False,A,
+anzeige02,Maschinen.,Mafchinen.,False,A,
+anzeige02,Maschinen.,Mächinen.,False,A,
+anzeige02,Mechanische Werk- stätte,Mechanifche Werftätte,False,A,zusaetzlich Trennung am Zeilenende (B)
+anzeige02,Mühlsteinfabrikation,Mühlesteinfabrikation,False,A,
+anzeige02,Mühlsteinfabrikation,Mühlfteinfabftritation,False,A,
+anzeige02,Mühlsteinfabrikation,Mühlfteinfabriation,False,A,
+anzeige02,Mühlsteinfabrikation,Mühlssteinfabrikation,False,A,
+anzeige02,Mühlsteinfabrikation,Mühlsteinfabriktion,False,A,
+anzeige02,Polytechniker),Politechniker),False,C,strittig: A (y/i) denkbar; hier als Angleichung an die litauische Form 'Politechnikas' gewertet
+anzeige02,Polytechniker),Polytechnifter),False,A,
+anzeige02,"Teer,","Zeer,",False,A,
+anzeige02,Torf-Trocken-,Torf - Troden-,False,A,zusaetzlich eingefuegte Spatien um den Bindestrich (B)
+anzeige02,Torf-Trocken- destillations-Anlagen.,Torf-Trocfen-deffiflations-Anlagen.,False,A,
+anzeige02,Verlag,Derlag,False,A,
+anzeige02,Wagen,Magen,False,A,
+anzeige02,Wasser-,Waffer-,False,A,
+anzeige02,Wasser-,Wärfer-,False,A,
+anzeige02,Wasser- turbinen.,Waffer-turbinen.,False,A,zusaetzlich Trennung am Zeilenende (B)
+anzeige02,Werk-,Wert-,False,A,
+anzeige02,destillations-Anlagen.,defiliations-Anlagen.,False,A,
+anzeige02,destillations-Anlagen.,deftillations-Unlagen.,False,A,
+anzeige02,elektrischen,eleftrifchen,False,A,
+anzeige02,elektrischen,elektriichen,False,A,
+anzeige02,litauischen,litauifchen,False,A,
+anzeige02,stätte,ftätte,False,A,
+anzeige02,stätte,fätte,False,A,
+anzeige02,technische,technifche,False,A,
+anzeige02,technischen,technifden,False,A,
+anzeige02,Ölen,Olen,False,A,"deutscher Umlaut, kein litauisches Diakritikum -> A statt Vorschlag D"
+anzeige02,Ölen,Sen,False,A,
+anzeige03,Amol-Werke-Hamburg.,Amol-Werte-Samburg.,False,A,
+anzeige03,Amol-Werke-Hamburg.,M o l - M e r f e - S a m b u r g.,False,B,Sperrsatz woertlich uebernommen; enthaelt zusaetzlich Frakturverwechslungen (A)
+anzeige03,Amol-Werke-Hamburg.,Umol-Werte-Hamburg.,False,A,
+anzeige03,"Apotheker-Bedarfsartikel,","Apotheter-Bedarfsartifel,",False,A,
+anzeige03,"Apotheker-Bedarfsartikel,","Upothefer-Bedarfsartikel,",False,A,
+anzeige03,Ernst,Ernft,False,A,
+anzeige03,Essenzen,Effenzen,False,A,
+anzeige03,Essenzen,Effsenzen,False,A,
+anzeige03,Essenzen,Offenzen,False,A,
+anzeige03,Generalvertretung,Generalverfretung,False,A,
+anzeige03,Generalvertretung,Generalverretung,False,A,
+anzeige03,"Gummiwaren,","Gummimwaren,",False,A,
+anzeige03,"Gummiwaren,","Gummivaren,",False,A,
+anzeige03,"Kowno,","Aromo,",False,E,"strittig: D denkbar (litauischer Ortsname); hier E, weil kein graphischer Bezug erkennbar"
+anzeige03,"Kowno,","Köwno,",False,A,deutscher Umlaut hinzugefuegt -> A statt Vorschlag D
+anzeige03,"Kuhlmann-Charlottenburg,","Auhlmann-Charlottenburg,",False,A,
+anzeige03,"Kuhlmann-Charlottenburg,","Kuhlmann-Charloffenburg,",False,A,
+anzeige03,"Kuhlmann-Charlottenburg,","Kuhmann-Charlottenburg,",False,A,
+anzeige03,"Kuhlmann-Charlottenburg,","Kuhnmann-Charlottenburg,",False,A,
+anzeige03,Moskau— Paris.,Mosfau-Paris.,False,A,zusaetzlich Gedankenstrich und Spatium (B)
+anzeige03,Moskau— Paris.,Mosfau—Paris.,False,A,zusaetzlich Spatium (B)
+anzeige03,Moskau— Paris.,Moskau-Paris.,False,B,
+anzeige03,Moskau— Paris.,Moskau—Paris.,False,B,
+anzeige03,Moskau— Paris.,Mostau–Paris.,False,A,
+anzeige03,Moskau— Paris.,Mostau—Paris.,False,A,
+anzeige03,Oele.,Dele.,False,A,
+anzeige03,Oele.,Öle.,False,C,
+anzeige03,Originalfabrikpreisen.,Originalfabrifpreifen.,False,A,
+anzeige03,Originalfabrikpreisen.,Originalfabrikenpreisen.,False,A,
+anzeige03,Originalfabrikpreisen.,Originalfabritpreisen.,False,A,
+anzeige03,"Parfümeriefabrik,","Parfumeriefabrif,",False,A,
+anzeige03,"Parfümeriefabrik,","Parfümeriefabrit,",False,A,
+anzeige03,Preislisten,Preisliften,False,A,
+anzeige03,"Pöritzsch,","Pörich,",False,A,
+anzeige03,"Pöritzsch,","Pörikisch,",False,A,
+anzeige03,"Pöritzsch,","Pöriksch,",False,A,
+anzeige03,"Pöritzsch,","Pörkisch,",False,A,
+anzeige03,"Pöritzsch,","Pörkish,",False,A,
+anzeige03,Toilette-Artikel.,Toilette-Artifel.,False,A,
+anzeige03,Verbandstoffabrik.,Berbandstofffabrit.,False,A,enthaelt zusaetzlich die Neuschreibung mit drei f (C)
+anzeige03,Verbandstoffabrik.,Verbandstoffabrif.,False,A,
+anzeige03,Verbandstoffabrik.,Verbandstofffabrik.,False,C,
+anzeige03,Verkauf,Verlauf,False,A,
+anzeige03,Verkauf,Vertauf,False,A,
+anzeige03,Wilnaerstr.,Wilnaertr.,False,A,
+anzeige03,andern,anderen,False,C,strittig: A denkbar; hier als Modernisierung der elidierten Form gewertet
+anzeige03,andern,andernd,False,A,
+anzeige03,kosmetische,tosmetische,False,A,
+anzeige03,verlange,verlangt,False,C,strittig: A (e/t) denkbar; hier als Modernisierung des Konjunktivs gewertet
+anzeige04,,E C E K A,True,B,Verschiebung: Block steht an anderer Stelle
+anzeige04,,ECEKA,True,B,Verschiebung: Block steht an anderer Stelle
+anzeige04,Art,2rt,False,A,
+anzeige04,Ausrüstungen.,Umrüstungen.,False,A,strittig: E denkbar; A->U ist jedoch eine klassische Frakturverwechslung
+anzeige04,Beste,Befste,False,A,
+anzeige04,Beste,Befte,False,A,
+anzeige04,ECEKA,,False,E,
+anzeige04,ECEKA,,True,B,Verschiebung: Block steht an anderer Stelle
+anzeige04,Geleise,Geleife,False,A,
+anzeige04,Gummiabsätze,Gummiabfähe,False,A,
+anzeige04,Gummiabsätze,Gummiabfälle,False,A,
+anzeige04,Gummiabsätze,Gummiabfänge,False,A,
+anzeige04,Gummiabsätze,Gummiaßfäge,False,A,
+anzeige04,Gummiabsätze,Gummibäfälle,False,A,
+anzeige04,Gummiabsätze,Gummibäsche,False,A,
+anzeige04,Gummiabsätze,Gummibäske,False,A,
+anzeige04,Installations-Materialien,Innfallations-Materialien,False,A,
+anzeige04,Kowno,Jovno,False,A,
+anzeige04,Kreissägen,Kreisfägen,False,A,
+anzeige04,Kreissägen,Kreislägen,False,A,
+anzeige04,Kreissägen,Kreisägen,False,A,
+anzeige04,"Lokomobilen,","Cotomobilen,",False,A,
+anzeige04,"Lokomobilen,","Locomobile,",False,C,"k->c ist keine Frakturverwechslung, sondern eine Schreibvariante"
+anzeige04,"Lokomobilen,","Locomobilen,",False,C,"k->c ist keine Frakturverwechslung, sondern eine Schreibvariante"
+anzeige04,"Lokomobilen,","Lotomobilen,",False,A,
+anzeige04,"Lokomobilen,","Lottomobiles,",False,A,
+anzeige04,Mäntel,Mantel,False,A,"deutscher Umlaut, kein litauisches Diakritikum -> A statt Vorschlag D"
+anzeige04,Mäntel,Mängel,False,E,strittig: A denkbar; 'Maengel' ist ein anderes Wort ohne graphische Naehe
+anzeige04,Potsdamerstraße,Potsdamstraße,False,E,"strittig: A denkbar; hier E, weil eine ganze Silbe entfaellt und ein gelaeufiger Name entsteht"
+anzeige04,Schwachstrom.,Schwadstrom.,False,A,
+anzeige04,Seidengaze,Seidengase,False,A,
+anzeige04,Spritzen,Spricken,False,A,
+anzeige04,Spritzen,Spriken,False,A,
+anzeige04,Spritzen,Sprizen,False,A,
+anzeige04,Spritzen,Sprügen,False,A,
+anzeige04,Stark-,Starf-,False,A,
+anzeige04,Stark-,Start-,False,A,
+anzeige04,Sämtliche,Sämftliche,False,A,
+anzeige04,Treibriemen,Treiberinnen,False,E,
+anzeige04,Zubehör- teile.,Zubehör-teile.,False,B,
+anzeige04,Zubehör- teile.,Zubehörteile.,False,B,
+anzeige04,billigst.,billig.,False,E,"strittig: A denkbar; hier E, weil zwei Buchstaben entfallen und ein anderes Wort entsteht"
+anzeige04,billigst.,billigft.,False,A,
+anzeige04,billigste,billigte,False,A,
+anzeige04,g-vė.,g-vé.,False,D,
+anzeige04,g-vė.,g.-vė.,False,B,
+anzeige04,ge- hörigen,gehörigen,False,B,
+anzeige04,sämtliche,familiäre,False,E,
+anzeige04,sämtliche,fämftliche,False,A,
+anzeige04,Šiaulių,Siauliu,False,D,
+anzeige05,Alėja,Alèja,False,D,
+anzeige05,Alėja,Alēja,False,D,
+anzeige05,DEUTZ,,False,E,
+anzeige05,Grössen,Großen,False,C,
+anzeige05,Grössen,Größen,False,C,
+anzeige05,"Kowno,","Kawno,",False,A,
+anzeige05,KÖNIGSBERG i./Pr.,KÖNIGSBERG¹/² DR.,False,A,strittig: B denkbar; die hochgestellten Buchstaben von 'i./Pr.' als Bruchziffern gelesen
+anzeige05,Laisvės,Laisvès,False,D,
+anzeige05,ZWEIGNIEDERLG. KÖNIGSBERG i./Pr. STEINDAMM,ZWEIGNIEDERLG.KONIGSBERG%Dr.STEINDAMM,False,B,Wortabstaende der ganzen Zeile verloren; enthaelt zusaetzlich Verwechslungen (A)
+anzeige05,ZWEIGNIEDERLG. KÖNIGSBERG i./Pr. STEINDAMM,ZWEIGNIEDERLG.KÖNIGSBERG,False,E,
+anzeige05,ZWEIGNIEDERLG. KÖNIGSBERG i./Pr. STEINDAMM,ZWEIGNIEDERLG.KÖNIGSBERG/Dr.STEINDAMM,False,B,Wortabstaende verloren
+anzeige05,ZWEIGNIEDERLG. KÖNIGSBERG i./Pr. STEINDAMM 37,"ZWEIGNIEDERL.G.KÖNIGSBERG""d.STEINDAMM37",False,B,Wortabstaende verloren
+anzeige05,flüssigen,Flüssigen,False,B,Grossschreibung am Wortanfang
+anzeige05,i./Pr.,/ Dr.,False,A,
