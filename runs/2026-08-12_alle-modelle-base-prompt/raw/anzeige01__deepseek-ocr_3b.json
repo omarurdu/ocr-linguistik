@@ -1,0 +1,21 @@
+{
+  "model": "deepseek-ocr:3b",
+  "created_at": "2026-08-11T16:55:06.072104249Z",
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 69091764376,
+  "load_duration": 16944460080,
+  "prompt_eval_count": 453,
+  "prompt_eval_duration": 43859208000,
+  "eval_count": 145,
+  "eval_duration": 7992850000,
+  "message": {
+    "role": "assistant",
+    "content": "<|im_end|>\n# Likör- und Schnaps-Fabrik „AUSRA“\n\n**Telegr.-Adr.: Ausra Kaunas**\n**Kaunas, Kirchenstrasse 1**\n**(Bažnyčio g. 1)**\n\n## Aquavit zu 40, 50 und 60°\n\n### Branntweine:\n\n**Kümmel**\n**Bittere Pomeranzen**\n**Subrowka**\n**Rjebinowka**\n**Pfeffer**\n\n### Liköre:\n\n**Klumpakojis (Kirsch)**\n**Suktine (süße Pomeranzen)**\n**Cacao, Berberitzen etc.**",
+    "thinking": null,
+    "images": null,
+    "tool_name": null,
+    "tool_calls": null
+  },
+  "logprobs": null
+}

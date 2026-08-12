@@ -1,0 +1,31 @@
+{
+  "id": "msg_011Cdxf5QVYu1oXgQvnmpKAG",
+  "container": null,
+  "content": [
+    {
+      "citations": null,
+      "text": "Likör- und Schnaps-Fabrik\n\n„AUŠRA\"\nTelegr.-Adr.: Aušra Kaunas\nKaunas, Kirchenstrasse 1\n(Bažnyčio g. 1)\n\nAquavit zu 40, 50 und 60°\n\nBranntweine:\nKümmel\nBittere Pomeranzen\nSubrowka\nRjebinowka\nPfeffer\n\nLikore:\nKlumpakojis (Kirsch)\nSuktine (süße Pomeranzen)\nCacao, Berberitzen etc.",
+      "type": "text"
+    }
+  ],
+  "model": "claude-haiku-4-5-20251001",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "not_available",
+    "input_tokens": 1618,
+    "output_tokens": 163,
+    "output_tokens_details": null,
+    "server_tool_use": null,
+    "service_tier": "standard"
+  }
+}

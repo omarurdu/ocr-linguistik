@@ -1,0 +1,11 @@
+{
+    "gt": "/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/GOLD__test.txt",
+    "ocr": "/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/test__qwen3-vl_2b.txt",
+
+    "cer": 0.02830188679245283,
+    "wer": 0.1282051282051282,
+
+
+    "n_characters": 318,
+    "n_words": 39
+}

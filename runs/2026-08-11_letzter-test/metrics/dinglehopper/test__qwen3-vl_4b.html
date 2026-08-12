@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style type="text/css">
+    
+    .gt .diff {
+        color: green;
+    }
+    .ocr .diff {
+        color: red;
+    }
+    
+    .ellipsis {
+        opacity: 0.5;
+        font-style: italic;
+    }
+    .diff-highlight {
+      border: 2px solid;
+      border-radius: 5px;
+    }
+
+    .row {
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th {
+        cursor: pointer;
+    }
+
+    th:hover {
+        background-color: #eee;
+    }
+    </style>
+</head>
+<body>
+
+
+
+<div class="container">
+
+/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/GOLD__test.txt<br>
+/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/test__qwen3-vl_4b.txt
+
+
+
+<h2>Metrics</h2>
+<p>CER: 0.0283</p>
+<p>WER: 0.1282</p>
+
+
+<h2>Character differences</h2>
+
+        <div class="row">
+           <div class="col-md-6 gt">Hammer &amp; Co. Getreide, Futter- und Düngemittel Baumaterialien Landwirtschaftliche Bedarf<span class="cdiff88 diff" data-toggle="tooltip" title="line 0">s</span>artikel Mühlen<span class="cdiff103 diff ellipsis" >·</span>-<span class="cdiff105 diff ellipsis" >·</span>Neu- und Umbauten Sämtliche Müllereim<span class="cdiff143 diff ellipsis" >·</span>aschinen Vertreter der Mühlenbauanstalt und Maschinenfabrik vorm. Gebr. Seck Dresden Königsberg i. Pr. Telegramm-Adresse: Haco, <span class="cdiff272 diff" data-toggle="tooltip" title="line 0">K</span>o<span class="cdiff274 diff" data-toggle="tooltip" title="line 0">w</span>no :: Tele<span class="cdiff285 diff" data-toggle="tooltip" title="line 0">p</span><span class="cdiff286 diff" data-toggle="tooltip" title="line 0">h</span>on 347 Kowno :–: Mišku g-v<span class="cdiff313 diff" data-toggle="tooltip" title="line 0">ė</span> Nr. 11</div>
+           <div class="col-md-6 ocr">Hammer &amp; Co. Getreide, Futter- und Düngemittel Baumaterialien Landwirtschaftliche Bedarf<span class="cdiff88 diff ellipsis" >·</span>artikel Mühlen<span class="cdiff103 diff" data-toggle="tooltip" title="line 0"> </span>-<span class="cdiff105 diff" data-toggle="tooltip" title="line 0"> </span>Neu- und Umbauten Sämtliche Müllereim<span class="cdiff143 diff" data-toggle="tooltip" title="line 0">m</span>aschinen Vertreter der Mühlenbauanstalt und Maschinenfabrik vorm. Gebr. Seck Dresden Königsberg i. Pr. Telegramm-Adresse: Haco, <span class="cdiff272 diff" data-toggle="tooltip" title="line 0">R</span>o<span class="cdiff274 diff" data-toggle="tooltip" title="line 0">m</span>no :: Tele<span class="cdiff285 diff" data-toggle="tooltip" title="line 0">f</span><span class="cdiff286 diff ellipsis" >·</span>on 347 Kowno :–: Mišku g-v<span class="cdiff313 diff" data-toggle="tooltip" title="line 0">é</span> Nr. 11</div>
+        </div>
+        
+
+<h2>Word differences</h2>
+
+        <div class="row">
+           <div class="col-md-6 gt"> Hammer Co Getreide Futter und Düngemittel Baumaterialien Landwirtschaftliche <span class="wdiff8 diff" >Bedarfsartikel</span> Mühlen Neu und Umbauten Sämtliche <span class="wdiff14 diff" >Müllereimaschinen</span> Vertreter der Mühlenbauanstalt und Maschinenfabrik vorm Gebr Seck Dresden Königsberg i Pr Telegramm Adresse Haco <span class="wdiff30 diff" >Kowno</span> <span class="wdiff31 diff" >Telephon</span> 347 Kowno Mišku g <span class="wdiff36 diff" >vė</span> Nr 11</div>
+           <div class="col-md-6 ocr"> Hammer Co Getreide Futter und Düngemittel Baumaterialien Landwirtschaftliche <span class="wdiff8 diff" >Bedarfartikel</span> Mühlen Neu und Umbauten Sämtliche <span class="wdiff14 diff" >Müllereimmaschinen</span> Vertreter der Mühlenbauanstalt und Maschinenfabrik vorm Gebr Seck Dresden Königsberg i Pr Telegramm Adresse Haco <span class="wdiff30 diff" >Romno</span> <span class="wdiff31 diff" >Telefon</span> 347 Kowno Mišku g <span class="wdiff36 diff" >vé</span> Nr 11</div>
+        </div>
+        
+
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+function find_diff_class(classes) {
+    return $('.' + classes.split(/\s+/).find(x => x.match(/.diff\d.*/)));
+}
+
+$(document).ready(function() {
+    /* Enable Bootstrap tooltips */
+    $('[data-toggle="tooltip"]').tooltip();
+
+    $('.diff').mouseover(function() {
+        find_diff_class($(this).attr('class')).addClass('diff-highlight');
+    });
+    $('.diff').mouseout(function() {
+        find_diff_class($(this).attr('class')).removeClass('diff-highlight');
+    });
+
+    /* Sort this column of the table */
+    $('th').click(function () {
+        var table = $(this).closest('table');
+        var rows = table.find('tbody > tr').toArray().sort(compareRows($(this).index()));
+        this.asc = !this.asc;
+        if (!this.asc) {
+            rows = rows.reverse();
+        }
+        for (var i = 0; i < rows.length; i++) {
+            table.children('tbody').append(rows[i]);
+        }
+    });
+
+    function compareRows(index) {
+        return function (row1, row2) {
+            var cell1 = $(row1).children('td').eq(index).text().toLowerCase();
+            var cell2 = $(row2).children('td').eq(index).text().toLowerCase();
+            return cell1.localeCompare(cell2, undefined, {
+                numeric: true,
+                sensitivity: 'base'
+            });
+        }
+    }
+});
+</script>
+
+
+</body>
+</html>

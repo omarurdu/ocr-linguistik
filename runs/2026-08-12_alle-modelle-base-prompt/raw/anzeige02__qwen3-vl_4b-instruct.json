@@ -1,0 +1,21 @@
+{
+  "model": "qwen3-vl:4b-instruct",
+  "created_at": "2026-08-11T15:55:16.550434653Z",
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 77505227470,
+  "load_duration": 321654004,
+  "prompt_eval_count": 1196,
+  "prompt_eval_duration": 56540036000,
+  "eval_count": 207,
+  "eval_duration": 19843618000,
+  "message": {
+    "role": "assistant",
+    "content": "Verlag der technischen Industrie- und Landwirtschafts-\nZeitschrift\n„Lietuvos Politechnikas“\n(Der Litauische Politechniker)\nKunst-Photochemiegraphie und Anfertigung von\nKunst-Klischees.\nAusrüstung und Niederlage von Spinnereien,\nMahlmühlen und anderen industriellen und\nelektrischen Maschinen. / Montage von Wasser-\nturbinen. / Mühlssteinfabrikation u. Betonbau.\nEinrichtung von Holz- und Torf-Trocken-\ndestillations-Anlagen. / Herstellung von Teer,\nTerpentin, Ölen u. dergl. / Mechanische Werk-\nstätte und Fabrik für Holz- und technische\n:: Artikel, Maschinen, Wagen und Räder. ::\nExport von Erzeugnissen der litauischen Industrie",
+    "thinking": null,
+    "images": null,
+    "tool_name": null,
+    "tool_calls": null
+  },
+  "logprobs": null
+}

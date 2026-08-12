@@ -1,0 +1,21 @@
+{
+  "model": "maternion/lightonocr-2:1b",
+  "created_at": "2026-08-11T16:28:45.603912226Z",
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 94455305135,
+  "load_duration": 5160720249,
+  "prompt_eval_count": 1935,
+  "prompt_eval_duration": 76529809000,
+  "eval_count": 299,
+  "eval_duration": 12219128000,
+  "message": {
+    "role": "assistant",
+    "content": "<div style=\"text-align: center;\">\n\n<div style=\"display: inline-block; vertical-align: top; margin-right: 20px;\">\n  ![image](image_1.png)\n</div>\n\n<div style=\"display: inline-block; vertical-align: top;\">\n  <h2>Likör- und Schnaps-Fabrik</h2>\n  <h1>„AUŠRA“</h1>\n  <p>Telegr.-Adr.: Aušra Kaunas</p>\n  <p>Kaunas, Kirchenstrasse 1</p>\n  <p>(Bažnyčio g. 1)</p>\n</div>\n\n</div>\n\n<hr />\n\n<h2>Aquavit zu 40, 50 und 60°</h2>\n\n<div style=\"text-align: center;\">\n  <span>▽</span>\n</div>\n\n<h2>Branntweine:</h2>\n- Kümmel\n- Bittere Pomeranzen\n- Subrowka\n- Rjebinowka\n- Pfeffer\n\n<h2>Liköre:</h2>\n- Klumpakojis (Kirsch)\n- Suktine (süße Pomeranzen)\n- Cacao, Berberitzen etc.\n\n<div style=\"text-align: center; margin-top: 20px;\">\n  ![image](image_2.png)\n</div>",
+    "thinking": null,
+    "images": null,
+    "tool_name": null,
+    "tool_calls": null
+  },
+  "logprobs": null
+}

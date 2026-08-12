@@ -1,0 +1,35 @@
+<div style="text-align: center; font-size: 24pt; font-weight: bold; margin-bottom: 10px;">
+M. Otto Hesse
+</div>
+
+<div style="text-align: center; font-size: 18pt; margin-bottom: 10px;">
+Berlin W. 9
+</div>
+
+<div style="text-align: center; font-size: 16pt; margin-bottom: 10px;">
+Potsdamerstraße Nr. 141
+</div>
+
+<div style="text-align: center; font-size: 24pt; font-weight: bold; margin-bottom: 10px;">
+Kowno
+</div>
+
+<div style="text-align: center; font-size: 18pt; margin-bottom: 10px;">
+Šiaulių g-vė. 14
+</div>
+
+<div style="text-align: center; margin-bottom: 10px;">
+![image](image_1.png)
+</div>
+
+<div style="text-align: center; font-size: 14pt; margin-bottom: 10px;">
+E C E K A
+</div>
+
+<div style="text-align: justify; margin-bottom: 10px;">
+Beste und billigste Bezugsquelle für Motore in jeder Art und Größe in nur Friedensausführung, sowie sämtliche Installations-Materialien für Start- und Schwachstrom. Ferner Treibriemen in jeder Ausführung, Seidengaze für Mühlen. Sprizen und Schläuche für Feuerwehr, sowie alle dazu gehörigen Ausrüstungen. Automobile, Motorräder, Fahrräder, Mäntel und Schläuche, Gummiabsätze billigst. Sämtliche landwirtschaftliche Maschinen, Lokomobilen, neu und gebraucht. Sägegatter, Kreissägen und Zubehörteile. Feldbahnen und Geleise dazu.
+</div>
+
+<div style="text-align: justify; margin-bottom: 10px;">
+Für reelle und schnelle Lieferung wird größte Sorge getragen.
+</div>

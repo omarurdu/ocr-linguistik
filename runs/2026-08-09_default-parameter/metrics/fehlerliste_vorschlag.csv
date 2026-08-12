@@ -1,0 +1,30 @@
+image,model,gold,hypothese,art,zeichen_ops,typ,bemerkung
+anzeige01,deepseek-ocr_3b,Müllereimaschinen,Müllereimaßhinen,Substitution,s->ß c->∅,A,
+anzeige01,deepseek-ocr_3b,Maschinenfabrik,Maßhinensfabrik,Substitution,s->ß c->∅ ∅->s,A,
+anzeige01,deepseek-ocr_3b,Dresden,Dres den,Substitution,∅-> ,B,
+anzeige01,deepseek-ocr_3b,Königsberg,Königseberg,Substitution,∅->e,E,PRUEFEN (Ermessensfall)
+anzeige01,deepseek-ocr_3b,Kowno,Anomo,Substitution,∅->A K->n w->m n->∅,D,
+anzeige01,deepseek-ocr_3b,g-vė,g-vé,Substitution,ė->é,D,
+anzeige01,gemma4_e4b,Mühlen-Neu- und,Mühlen-Neu-und,Substitution, ->∅,B,
+anzeige01,gemma4_e4b,Königsberg i. Pr.,,Loeschung,geloescht: Königsberg i. Pr.,E,
+anzeige01,gemma4_e4b,Kowno,Rowno,Substitution,K->R,D,PRUEFEN (Ermessensfall)
+anzeige01,gemma4_e4b,Telephon,Telefon,Substitution,p->f h->∅,C,
+anzeige01,gemma4_e4b,:—:,::,Substitution,—->∅,B,
+anzeige01,gemma4_e4b,g-vė,g-vé,Substitution,ė->é,D,
+anzeige01,glm-ocr_latest,Bedarfsartikel Mühlen-Neu-,Bedarfssartikel Mühlen - Neu-,Substitution,∅->s ∅->  ∅-> ,"B,E",PRUEFEN (Ermessensfall)
+anzeige01,glm-ocr_latest,Müllereimaschinen,Müllereimachinen,Substitution,s->∅,A,
+anzeige01,glm-ocr_latest,Vertreter,Verfreter,Substitution,t->f,A,PRUEFEN (Ermessensfall)
+anzeige01,glm-ocr_latest,Maschinenfabrik,Machinenfabrik,Substitution,s->∅,A,
+anzeige01,glm-ocr_latest,g-vė,g-vé,Substitution,ė->é,D,
+anzeige01,maternion_lightonocr-2_1b,Müllereimaschinen,Müllereimachines,Substitution,s->∅ n->s,A,
+anzeige01,maternion_lightonocr-2_1b,Telephon,Telefon,Substitution,p->f h->∅,C,
+anzeige01,maternion_lightonocr-2_1b,g-vė,g-vé,Substitution,ė->é,D,
+anzeige01,qwen3-vl_2b,Müllereimaschinen,Müllerreimachinen,Substitution,∅->r s->∅,A,
+anzeige01,qwen3-vl_2b,Vertreter,Vertreteter,Substitution,∅->t ∅->e,E,
+anzeige01,qwen3-vl_2b,Kowno,Kornno,Substitution,∅->r w->n,D,PRUEFEN (Ermessensfall)
+anzeige01,qwen3-vl_2b,Telephon,Telefon,Substitution,p->f h->∅,C,
+anzeige01,qwen3-vl_2b,g-vė,g-vé,Substitution,ė->é,D,
+anzeige01,qwen3-vl_4b,Mühlen-Neu-,Mühlen - Neu-,Substitution,∅->  ∅-> ,B,
+anzeige01,qwen3-vl_4b,Müllereimaschinen,Müllereimmaschinen,Substitution,∅->m,E,
+anzeige01,qwen3-vl_4b,Telephon,Telefon,Substitution,p->f h->∅,C,
+anzeige01,qwen3-vl_4b,g-vė,g-vé,Substitution,ė->é,D,

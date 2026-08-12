@@ -1,0 +1,11 @@
+{
+    "gt": "/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/GOLD__test.txt",
+    "ocr": "/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/test__gemma4_e4b.txt",
+
+    "cer": 0.07547169811320754,
+    "wer": 0.15384615384615385,
+
+
+    "n_characters": 318,
+    "n_words": 39
+}

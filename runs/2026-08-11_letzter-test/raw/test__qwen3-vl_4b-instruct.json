@@ -1,0 +1,21 @@
+{
+  "model": "qwen3-vl:4b-instruct",
+  "created_at": "2026-08-11T14:38:27.253233269Z",
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 75676665565,
+  "load_duration": 18463887957,
+  "prompt_eval_count": 1107,
+  "prompt_eval_duration": 44856066000,
+  "eval_count": 130,
+  "eval_duration": 12185320000,
+  "message": {
+    "role": "assistant",
+    "content": "Hammer & Co.\nGetreide, Futter- und Düngemittel\nBaumaterialien\nLandwirtschaftliche Bedarfsartikel\n\nMühlen-Neu-\nund Umbauten\nSämtliche Müllereimashinen\n\nVertreter der Mühlenbauanfall und\nMaschinenfabrik vorm. Gebr. Seck\nDres den\nKönigsberg i. Pr.\n\nTelegramm-Adresse: Haco, Kowno :: Telefon 347\nKowno :—: Mišku g-vé Nr. 11",
+    "thinking": null,
+    "images": null,
+    "tool_name": null,
+    "tool_calls": null
+  },
+  "logprobs": null
+}

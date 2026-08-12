@@ -1,0 +1,21 @@
+{
+  "model": "glm-ocr:bf16",
+  "created_at": "2026-08-11T16:45:27.65509405Z",
+  "done": false,
+  "done_reason": null,
+  "total_duration": null,
+  "load_duration": null,
+  "prompt_eval_count": null,
+  "prompt_eval_duration": null,
+  "eval_count": null,
+  "eval_duration": null,
+  "message": {
+    "role": "assistant",
+    "content": "Verlag der technischen Industrie- und Landwirtschafts-\nZeitschrift\n„Lietuvos Politechnikas“\n(Der Litauische Polytechniker)\nKunst-Photochemiegraphie und Unfertigung von\nKunst-Klischees.\nAusrüstung und Niederlage von Spinnereien,\nMahlmühlen und anderen industriellen und\nelektrischen Maschinen. / Montage von Waffer-\nturbinen. / Mühlsteinfabriktion u. Betonbau.\nEinrichtung von Holz- und Torf-Trocken-\ndeftillations-Unlagen. / Herstellung von Teer,\nTerpentin, Ölen u. dergl. / Mechanische Wert-\nftätte und Fabrift für Holz- und technische\n:: Artifel, Maschinen, Wagen und Räder. ::\nExport von Erzeugnissen der litauischen Industrie",
+    "thinking": null,
+    "images": null,
+    "tool_name": null,
+    "tool_calls": null
+  },
+  "logprobs": null
+}

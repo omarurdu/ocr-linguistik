@@ -1,0 +1,21 @@
+{
+  "model": "glm-ocr:bf16",
+  "created_at": "2026-08-11T16:50:02.376631261Z",
+  "done": false,
+  "done_reason": null,
+  "total_duration": null,
+  "load_duration": null,
+  "prompt_eval_count": null,
+  "prompt_eval_duration": null,
+  "eval_count": null,
+  "eval_duration": null,
+  "message": {
+    "role": "assistant",
+    "content": "M. Otto Hesse\nBerlin W. 9\nPotsdamstraße Nr. 141\nKowno\nŠiaulių g-vė. 14\nBeste und billigste Bezugsquelle für Motore in jeder Art und Größe in nur Friedensausführung, sowie fämftliche Installations-Materialien für Starf- und Schwachstrom. Ferner Treibriemen in jeder Ausführung, Seidengaze für Mühlen. Spriken und Schläuche für Feuerwehr, sowie alle dazu gehörigen Ausrüstungen. Automobile, Motorräder, Fahrräder, Mäntel und Schläuche, Gummiabfähe billigft. Sämftliche landwirtschaftliche Maschinen, Lotomobilen, neu und gebraucht. Sägegatter, Kreisfägen und Zubehör-teile. Feldbahnen und Geleife dazu.\nFür reelle und schnelle Lieferung wird größte Sorge getragen.\nECEKA",
+    "thinking": null,
+    "images": null,
+    "tool_name": null,
+    "tool_calls": null
+  },
+  "logprobs": null
+}

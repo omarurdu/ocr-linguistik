@@ -1,0 +1,11 @@
+{
+    "gt": "/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/GOLD__anzeige04.txt",
+    "ocr": "/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/anzeige04__minicpm-v4.5_8b.txt",
+
+    "cer": 0.0475482912332838,
+    "wer": 0.1348314606741573,
+
+
+    "n_characters": 673,
+    "n_words": 89
+}

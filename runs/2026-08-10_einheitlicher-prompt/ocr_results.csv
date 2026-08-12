@@ -1,0 +1,8 @@
+model,image,seconds,output_path
+qwen3-vl:4b,test.png,373.2,/home/tzuru/Projects/CL-Methoden/output/transcriptions/test__qwen3-vl_4b.txt
+gemma4:e4b,test.png,61.0,/home/tzuru/Projects/CL-Methoden/output/transcriptions/test__gemma4_e4b.txt
+qwen3.5:4b,test.png,46.8,/home/tzuru/Projects/CL-Methoden/output/transcriptions/test__qwen3.5_4b.txt
+maternion/lightonocr-2:1b,test.png,96.4,/home/tzuru/Projects/CL-Methoden/output/transcriptions/test__maternion_lightonocr-2_1b.txt
+glm-ocr:bf16,test.png,204.7,/home/tzuru/Projects/CL-Methoden/output/transcriptions/test__glm-ocr_bf16.txt
+deepseek-ocr:3b,test.png,51.0,/home/tzuru/Projects/CL-Methoden/output/transcriptions/test__deepseek-ocr_3b.txt
+minicpm-v4.5:8b,test.png,70.1,/home/tzuru/Projects/CL-Methoden/output/transcriptions/test__minicpm-v4.5_8b.txt

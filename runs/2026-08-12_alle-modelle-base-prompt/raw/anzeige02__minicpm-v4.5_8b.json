@@ -1,0 +1,21 @@
+{
+  "model": "minicpm-v4.5:8b",
+  "created_at": "2026-08-11T17:01:08.389060806Z",
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 90027966073,
+  "load_duration": 402154174,
+  "prompt_eval_count": 506,
+  "prompt_eval_duration": 56286734000,
+  "eval_count": 219,
+  "eval_duration": 32745033000,
+  "message": {
+    "role": "assistant",
+    "content": "Verlag der technifden Induftrie- und Landwirtfchafts-Zeitschrift\n„Lietuvos Politechnikas“\n(Der Litauifche Polytechnifter)\nKunft-Photochemiegraphie und Unfertigung von Kunft-Klifchees.\nAusruftung und Niederlage von Spinnereien, Mahlmühlen und anderen industriellen und eleftrifchen Mafchinen. / Montage von Waffer-turbinen. / Mühlfteinfabftritation u. Betonbau.\nEinrichtung von Holz- und Torf-Trocfen-deffiflations-Anlagen. / Herftellung von Zeer, Terpentin, Sen u. dergl. / Mechanifche Werftätte und Fabrif für Holz- und technifche :: Artifel, Mafchinen, Magen und Räder. ::\nExport von Erzeugniffen der litauifchen Induftrie",
+    "thinking": null,
+    "images": null,
+    "tool_name": null,
+    "tool_calls": null
+  },
+  "logprobs": null
+}

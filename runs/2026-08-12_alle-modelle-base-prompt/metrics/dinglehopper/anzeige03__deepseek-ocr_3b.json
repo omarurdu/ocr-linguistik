@@ -1,0 +1,11 @@
+{
+    "gt": "/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/GOLD__anzeige03.txt",
+    "ocr": "/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/anzeige03__deepseek-ocr_3b.txt",
+
+    "cer": 0.06457925636007827,
+    "wer": 0.3770491803278688,
+
+
+    "n_characters": 511,
+    "n_words": 61
+}

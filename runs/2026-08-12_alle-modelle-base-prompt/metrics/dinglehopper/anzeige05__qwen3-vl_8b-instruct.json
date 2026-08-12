@@ -1,0 +1,11 @@
+{
+    "gt": "/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/GOLD__anzeige05.txt",
+    "ocr": "/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/anzeige05__qwen3-vl_8b-instruct.txt",
+
+    "cer": 0.028037383177570093,
+    "wer": 0.10714285714285714,
+
+
+    "n_characters": 214,
+    "n_words": 28
+}

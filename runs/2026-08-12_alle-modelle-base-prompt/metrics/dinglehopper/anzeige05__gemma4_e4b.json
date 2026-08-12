@@ -1,0 +1,11 @@
+{
+    "gt": "/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/GOLD__anzeige05.txt",
+    "ocr": "/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/anzeige05__gemma4_e4b.txt",
+
+    "cer": 0.102803738317757,
+    "wer": 0.32142857142857145,
+
+
+    "n_characters": 214,
+    "n_words": 28
+}

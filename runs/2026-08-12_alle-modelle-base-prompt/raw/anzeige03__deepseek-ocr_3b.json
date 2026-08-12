@@ -1,0 +1,21 @@
+{
+  "model": "deepseek-ocr:3b",
+  "created_at": "2026-08-11T16:56:10.142655817Z",
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 28971915095,
+  "load_duration": 518243268,
+  "prompt_eval_count": 305,
+  "prompt_eval_duration": 20838663000,
+  "eval_count": 183,
+  "eval_duration": 7272315000,
+  "message": {
+    "role": "assistant",
+    "content": "<|im_end|>\nEn gros Mogilewski & Finn En gros\nAromo, Gr. Wilnaerstr. 13. Tel. 338.\nSpezialhaus für Gummivaren, Verbandstoffe,\nApotheker-Bedarfsartikel, tosmetische und\nToilette-Artikel.\nGeneralvertretung und Niederlage für Litauen und die\nandern Randstaaten der Fabriken:\nM o l - M e r f e - S a m b u r g.\nKluge & Pöritzsch, Leipzig, Effenzen und ätherische Dele.\nBrocard & Co. Parfümeriefabrik, Mostau—Paris.\nDr. Ernst Auhlmann-Charlottenburg, Verbandstoffabrik.\nVertauf zu Originalfabrikpreisen.\nMan verlange Preislisten und Offerten.",
+    "thinking": null,
+    "images": null,
+    "tool_name": null,
+    "tool_calls": null
+  },
+  "logprobs": null
+}

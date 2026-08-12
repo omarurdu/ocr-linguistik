@@ -1,0 +1,11 @@
+{
+    "gt": "/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/GOLD__anzeige04.txt",
+    "ocr": "/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/anzeige04__anthropic_claude-opus-5.txt",
+
+    "cer": 0.005943536404160475,
+    "wer": 0.0449438202247191,
+
+
+    "n_characters": 673,
+    "n_words": 89
+}

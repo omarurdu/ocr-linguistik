@@ -1,0 +1,21 @@
+{
+  "model": "minicpm-v4.5:8b",
+  "created_at": "2026-08-11T17:05:30.520596762Z",
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 87420008315,
+  "load_duration": 439715501,
+  "prompt_eval_count": 640,
+  "prompt_eval_duration": 71440585000,
+  "eval_count": 98,
+  "eval_duration": 14538825000,
+  "message": {
+    "role": "assistant",
+    "content": "DEUTZ\nMotor-Lokomobilen\nin verschiedenen Ausführungen\nund Grössen für alle billigen flüssigen\nBrennstoffe.\n3252\nGASMOTOREN-FABRIK DEUTZ\nZWEIGNIEDERLG.KÖNIGSBERG/Dr.STEINDAMM 37\nUnterbüro: Kowno, Laisvės Alėja 5",
+    "thinking": null,
+    "images": null,
+    "tool_name": null,
+    "tool_calls": null
+  },
+  "logprobs": null
+}

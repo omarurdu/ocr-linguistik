@@ -1,0 +1,11 @@
+{
+    "gt": "/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/GOLD__anzeige04.txt",
+    "ocr": "/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/anzeige04__maternion_lightonocr-2_1b.txt",
+
+    "cer": 0.03268945022288262,
+    "wer": 0.1348314606741573,
+
+
+    "n_characters": 673,
+    "n_words": 89
+}

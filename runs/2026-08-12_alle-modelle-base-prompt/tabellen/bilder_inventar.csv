@@ -1,0 +1,6 @@
+﻿datei;format;breite_px;hoehe_px;laengste_kante_px;megapixel;seitenverhaeltnis;modus;farbtiefe_klartext;dpi_x;dpi_y;dpi_quelle;faktor_auf_1540;skalierung;dateigroesse_kb
+anzeige01.png;PNG;1288;2028;2028;2,61;0,635;RGBA;Farbe + Alpha;72,0;72,0;Dateiheader;0,76;verkleinert;2267,3
+anzeige02.png;PNG;1122;1065;1122;1,19;1,054;RGBA;Farbe + Alpha;72,0;72,0;Dateiheader;1,37;hochskaliert;1566,9
+anzeige03.png;PNG;1300;1020;1300;1,33;1,275;RGBA;Farbe + Alpha;72,0;72,0;Dateiheader;1,18;hochskaliert;1693,5
+anzeige04.png;PNG;1256;1040;1256;1,31;1,208;RGBA;Farbe + Alpha;72,0;72,0;Dateiheader;1,23;hochskaliert;1541,1
+anzeige05.png;PNG;1281;1827;1827;2,34;0,701;RGBA;Farbe + Alpha;72,0;72,0;Dateiheader;0,84;verkleinert;3093,6

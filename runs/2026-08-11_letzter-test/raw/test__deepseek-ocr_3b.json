@@ -1,0 +1,21 @@
+{
+  "model": "deepseek-ocr:3b",
+  "created_at": "2026-08-11T14:46:02.612069596Z",
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 49505292001,
+  "load_duration": 18198708981,
+  "prompt_eval_count": 305,
+  "prompt_eval_duration": 24075305000,
+  "eval_count": 139,
+  "eval_duration": 7095414000,
+  "message": {
+    "role": "assistant",
+    "content": "<|im_end|>\nHammer & Co.\nGetreide, Futter- und Düngemittel\nBaumaterialien\nLandwirtschaftliche Bedarfsartikel\nMühlen-Neu-\nund Umbauten\nSämtliche Müllereimadrinnen\nVertreter der Mühlenbauanstalt und\nMaßchinenfabrik vorm. Gebr. Seck\nDresden Königseberg i. Pr.\n<|im_continue|>Telegramm-Überfße: Haco, Anomo :: Telephon 347\nKowno ::: Mišku g-vé Nr. 11",
+    "thinking": null,
+    "images": null,
+    "tool_name": null,
+    "tool_calls": null
+  },
+  "logprobs": null
+}

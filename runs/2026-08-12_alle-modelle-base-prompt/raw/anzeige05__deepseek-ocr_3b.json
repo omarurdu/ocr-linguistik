@@ -1,0 +1,21 @@
+{
+  "model": "deepseek-ocr:3b",
+  "created_at": "2026-08-11T16:57:32.111856863Z",
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 49820038331,
+  "load_duration": 469051915,
+  "prompt_eval_count": 453,
+  "prompt_eval_duration": 43999979000,
+  "eval_count": 88,
+  "eval_duration": 4895700000,
+  "message": {
+    "role": "assistant",
+    "content": "# Motor-Lokomobilen\n\n## in verschiedenen Ausführungen und Großen für alle billigen Flüssigen Brennstoffe.\n\n3252\n\n### GASMOTOREN-FABRIK DEUTZ\n#### ZWEIGNIEDERL.G.KÖNIGSBERG\"d.STEINDAMM37\n\n##### Unterbüro: Kowno, Laisvės Alėja 5",
+    "thinking": null,
+    "images": null,
+    "tool_name": null,
+    "tool_calls": null
+  },
+  "logprobs": null
+}

@@ -1,0 +1,11 @@
+{
+    "gt": "/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/GOLD__test.txt",
+    "ocr": "/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/test__maternion_lightonocr-2_1b.txt",
+
+    "cer": 0.015723270440251572,
+    "wer": 0.07692307692307693,
+
+
+    "n_characters": 318,
+    "n_words": 39
+}

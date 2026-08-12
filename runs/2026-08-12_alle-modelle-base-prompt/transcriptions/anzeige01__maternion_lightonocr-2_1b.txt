@@ -1,0 +1,39 @@
+<div style="text-align: center;">
+
+<div style="display: inline-block; vertical-align: top; margin-right: 20px;">
+  ![image](image_1.png)
+</div>
+
+<div style="display: inline-block; vertical-align: top;">
+  <h2>Likör- und Schnaps-Fabrik</h2>
+  <h1>„AUŠRA“</h1>
+  <p>Telegr.-Adr.: Aušra Kaunas</p>
+  <p>Kaunas, Kirchenstrasse 1</p>
+  <p>(Bažnyčio g. 1)</p>
+</div>
+
+</div>
+
+<hr />
+
+<h2>Aquavit zu 40, 50 und 60°</h2>
+
+<div style="text-align: center;">
+  <span>▽</span>
+</div>
+
+<h2>Branntweine:</h2>
+- Kümmel
+- Bittere Pomeranzen
+- Subrowka
+- Rjebinowka
+- Pfeffer
+
+<h2>Liköre:</h2>
+- Klumpakojis (Kirsch)
+- Suktine (süße Pomeranzen)
+- Cacao, Berberitzen etc.
+
+<div style="text-align: center; margin-top: 20px;">
+  ![image](image_2.png)
+</div>

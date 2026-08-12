@@ -1,0 +1,21 @@
+{
+  "model": "maternion/lightonocr-2:1b",
+  "created_at": "2026-08-11T16:35:34.166195434Z",
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 140714501737,
+  "load_duration": 256307563,
+  "prompt_eval_count": 2540,
+  "prompt_eval_duration": 114033620000,
+  "eval_count": 458,
+  "eval_duration": 25687535000,
+  "message": {
+    "role": "assistant",
+    "content": "<div style=\"text-align: center; font-size: 24pt; font-weight: bold; margin-bottom: 10px;\">\nM. Otto Hesse\n</div>\n\n<div style=\"text-align: center; font-size: 18pt; margin-bottom: 10px;\">\nBerlin W. 9\n</div>\n\n<div style=\"text-align: center; font-size: 16pt; margin-bottom: 10px;\">\nPotsdamerstraße Nr. 141\n</div>\n\n<div style=\"text-align: center; font-size: 24pt; font-weight: bold; margin-bottom: 10px;\">\nKowno\n</div>\n\n<div style=\"text-align: center; font-size: 18pt; margin-bottom: 10px;\">\nŠiaulių g-vė. 14\n</div>\n\n<div style=\"text-align: center; margin-bottom: 10px;\">\n![image](image_1.png)\n</div>\n\n<div style=\"text-align: center; font-size: 14pt; margin-bottom: 10px;\">\nE C E K A\n</div>\n\n<div style=\"text-align: justify; margin-bottom: 10px;\">\nBeste und billigste Bezugsquelle für Motore in jeder Art und Größe in nur Friedensausführung, sowie sämtliche Installations-Materialien für Start- und Schwachstrom. Ferner Treibriemen in jeder Ausführung, Seidengaze für Mühlen. Sprizen und Schläuche für Feuerwehr, sowie alle dazu gehörigen Ausrüstungen. Automobile, Motorräder, Fahrräder, Mäntel und Schläuche, Gummiabsätze billigst. Sämtliche landwirtschaftliche Maschinen, Lokomobilen, neu und gebraucht. Sägegatter, Kreissägen und Zubehörteile. Feldbahnen und Geleise dazu.\n</div>\n\n<div style=\"text-align: justify; margin-bottom: 10px;\">\nFür reelle und schnelle Lieferung wird größte Sorge getragen.\n</div>",
+    "thinking": null,
+    "images": null,
+    "tool_name": null,
+    "tool_calls": null
+  },
+  "logprobs": null
+}

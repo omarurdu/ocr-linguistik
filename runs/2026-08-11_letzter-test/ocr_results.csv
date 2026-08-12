@@ -1,0 +1,9 @@
+model,model_reported,image,prompt_id,done_reason,prompt_eval_count,eval_count,seconds,output_path,raw_path
+qwen3-vl:4b-instruct,qwen3-vl:4b-instruct,test.png,P-GEN-01,stop,1107,130,75.9,/home/tzuru/Projects/CL-Methoden/output/transcriptions/test__qwen3-vl_4b-instruct.txt,/home/tzuru/Projects/CL-Methoden/output/raw/test__qwen3-vl_4b-instruct.json
+qwen3-vl:8b-instruct,qwen3-vl:8b-instruct,test.png,P-GEN-01,stop,1107,129,140.6,/home/tzuru/Projects/CL-Methoden/output/transcriptions/test__qwen3-vl_8b-instruct.txt,/home/tzuru/Projects/CL-Methoden/output/raw/test__qwen3-vl_8b-instruct.json
+gemma4:e4b,gemma4:e4b,test.png,P-GEN-01,stop,265,149,60.6,/home/tzuru/Projects/CL-Methoden/output/transcriptions/test__gemma4_e4b.txt,/home/tzuru/Projects/CL-Methoden/output/raw/test__gemma4_e4b.json
+qwen3.5:4b,qwen3.5:4b,test.png,P-GEN-01,stop,544,120,44.9,/home/tzuru/Projects/CL-Methoden/output/transcriptions/test__qwen3.5_4b.txt,/home/tzuru/Projects/CL-Methoden/output/raw/test__qwen3.5_4b.json
+maternion/lightonocr-2:1b,maternion/lightonocr-2:1b,test.png,P-OCR-LIGHTON-01,stop,1935,130,88.2,/home/tzuru/Projects/CL-Methoden/output/transcriptions/test__maternion_lightonocr-2_1b.txt,/home/tzuru/Projects/CL-Methoden/output/raw/test__maternion_lightonocr-2_1b.json
+glm-ocr:bf16,glm-ocr:bf16,test.png,P-OCR-GLM-01,length,652,1024,64.6,/home/tzuru/Projects/CL-Methoden/output/transcriptions/test__glm-ocr_bf16.txt,/home/tzuru/Projects/CL-Methoden/output/raw/test__glm-ocr_bf16.json
+deepseek-ocr:3b,deepseek-ocr:3b,test.png,P-OCR-DSK-01,stop,305,139,49.6,/home/tzuru/Projects/CL-Methoden/output/transcriptions/test__deepseek-ocr_3b.txt,/home/tzuru/Projects/CL-Methoden/output/raw/test__deepseek-ocr_3b.json
+minicpm-v4.5:8b,minicpm-v4.5:8b,test.png,P-GEN-01,stop,242,128,79.0,/home/tzuru/Projects/CL-Methoden/output/transcriptions/test__minicpm-v4.5_8b.txt,/home/tzuru/Projects/CL-Methoden/output/raw/test__minicpm-v4.5_8b.json

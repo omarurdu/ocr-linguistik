@@ -1,0 +1,98 @@
+{
+  "id": "resp_04f9fa87f112e135006a7c4d20afec8195ae81810a6e5746d5",
+  "created_at": 1786531104.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "gpt-5.6-sol",
+  "object": "response",
+  "output": [
+    {
+      "id": "msg_04f9fa87f112e135006a7c4d2183e48195b21f863a5fa8c0f1",
+      "content": [
+        {
+          "annotations": [],
+          "text": "En gros Mogilewski & Finn En gros\nKowno, Gr. Wilnaerstr. 13. Tel. 338.\nSpezialhaus für Gummiwaren, Verbandstoffe,\nApotheker-Bedarfsartikel, kosmetische und\nToilette-Artikel.\nGeneralvertretung und Niederlage für Litauen und die\nandern Randstaaten der Fabriken:\nAmol-Werke-Hamburg.\nKluge & Pörisch, Leipzig, Essenzen und ätherische Oele.\nBrocard & Co. Parfümeriefabrik, Moskau—Paris.\nDr. Ernst Kuhlmann-Charlottenburg, Verbandstoffabrik.\nVerkauf zu Originalfabrikpreisen.\nMan verlange Preislisten und Offerten.",
+          "type": "output_text",
+          "logprobs": []
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message",
+      "phase": "final_answer"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 0.98,
+  "background": false,
+  "completed_at": 1786531108.0,
+  "conversation": null,
+  "max_output_tokens": 4096,
+  "max_tool_calls": null,
+  "moderation": null,
+  "previous_response_id": null,
+  "prompt": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "none",
+    "generate_summary": null,
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "top_logprobs": 0,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 1606,
+    "input_tokens_details": {
+      "cache_write_tokens": 1603,
+      "cached_tokens": 0
+    },
+    "output_tokens": 164,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1770
+  },
+  "user": null,
+  "billing": {
+    "payer": "developer"
+  },
+  "frequency_penalty": 0.0,
+  "presence_penalty": 0.0,
+  "store": true,
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  }
+}

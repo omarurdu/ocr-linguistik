@@ -1,0 +1,98 @@
+{
+  "id": "resp_00df59e18430c356006a7c4d1ab94881939a5b02774d2e2bdb",
+  "created_at": 1786531098.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "gpt-5.6-sol",
+  "object": "response",
+  "output": [
+    {
+      "id": "msg_00df59e18430c356006a7c4d1c03888193bcaaa78660aecca9",
+      "content": [
+        {
+          "annotations": [],
+          "text": "Verlag der technischen Industrie- und Landwirtschafts-\nZeitschrift\n„Lietuvos Politechnikas“\n(Der Litauische Polytechniker)\nKunst-Photochemiegraphie und Anfertigung von\nKunst-Klischees.\nAusrüstung und Niederlage von Spinnereien,\nMahlmühlen und anderen industriellen und\nelektrischen Maschinen. / Montage von Wasser-\nturbinen. / Mühlsteinfabrikation u. Betonbau.\nEinrichtung von Holz- und Torf-Trocken-\ndestillations-Anlagen. / Herstellung von Teer,\nTerpentin, Ölen u. dergl. / Mechanische Werk-\nstätte und Fabrik für Holz- und technische\n:: Artikel, Maschinen, Wagen und Räder. ::\nExport von Erzeugnissen der litauischen Industrie",
+          "type": "output_text",
+          "logprobs": []
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message",
+      "phase": "final_answer"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 0.98,
+  "background": false,
+  "completed_at": 1786531102.0,
+  "conversation": null,
+  "max_output_tokens": 4096,
+  "max_tool_calls": null,
+  "moderation": null,
+  "previous_response_id": null,
+  "prompt": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "none",
+    "generate_summary": null,
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "top_logprobs": 0,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 1500,
+    "input_tokens_details": {
+      "cache_write_tokens": 1497,
+      "cached_tokens": 0
+    },
+    "output_tokens": 176,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1676
+  },
+  "user": null,
+  "billing": {
+    "payer": "developer"
+  },
+  "frequency_penalty": 0.0,
+  "presence_penalty": 0.0,
+  "store": true,
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  }
+}

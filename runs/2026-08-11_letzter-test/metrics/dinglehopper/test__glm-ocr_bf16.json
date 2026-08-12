@@ -1,0 +1,11 @@
+{
+    "gt": "/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/GOLD__test.txt",
+    "ocr": "/home/tzuru/Projects/CL-Methoden/output/metrics/normalized/test__glm-ocr_bf16.txt",
+
+    "cer": 0.018867924528301886,
+    "wer": 0.10256410256410256,
+
+
+    "n_characters": 318,
+    "n_words": 39
+}

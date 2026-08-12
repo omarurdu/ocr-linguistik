@@ -1,0 +1,21 @@
+{
+  "model": "gemma4:e4b",
+  "created_at": "2026-08-11T16:16:27.057844088Z",
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 60851217438,
+  "load_duration": 33814942945,
+  "prompt_eval_count": 297,
+  "prompt_eval_duration": 12661682000,
+  "eval_count": 135,
+  "eval_duration": 14040600000,
+  "message": {
+    "role": "assistant",
+    "content": "Likor- und Schnaps-Fabrik\n„AUŠRA“\n\nFABRIKO ŽENKLAS\nAUŠRA\n\nTeleg.-Adr.: Aušra Kaunas\nKaunas, Kirchenstrasse 1\n(Bažnyčio g. 1)\n\nAquavit zu 40, 50 und 60°\n\nBranntweine:\nKümmel\nBittere Pomeranzen\nSubrowka\nRjebinowka\nPfeffer\n\nLiköre:\nKlumpakojis (Kirsch)\nSuktine (süße Pomeranzen)\nCacao, Berberitzen etc.",
+    "thinking": null,
+    "images": null,
+    "tool_name": null,
+    "tool_calls": null
+  },
+  "logprobs": null
+}

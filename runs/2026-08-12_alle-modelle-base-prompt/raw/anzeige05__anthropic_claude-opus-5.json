@@ -1,0 +1,33 @@
+{
+  "id": "msg_011Cdxi46HF4aDTyk2Yh6dBC",
+  "container": null,
+  "content": [
+    {
+      "citations": null,
+      "text": "DEUTZ\nMotor-Lokomobilen\nin verschiedenen Ausführungen und Grössen für alle billigen flüssigen Brennstoffe.\n3252\nGASMOTOREN-FABRIK DEUTZ\nZWEIGNIEDERLG. KÖNIGSBERG i/Pr. STEINDAMM 37\nUnterbüro: Kowno, Laisvės Alėja 5",
+      "type": "text"
+    }
+  ],
+  "model": "claude-opus-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 3102,
+    "output_tokens": 146,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  }
+}

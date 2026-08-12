@@ -1,0 +1,21 @@
+{
+  "model": "gemma4:e4b",
+  "created_at": "2026-08-11T16:17:30.353397159Z",
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 30885119210,
+  "load_duration": 659926078,
+  "prompt_eval_count": 289,
+  "prompt_eval_duration": 11655805000,
+  "eval_count": 178,
+  "eval_duration": 18427089000,
+  "message": {
+    "role": "assistant",
+    "content": "En gros Mogilewski & Finn En gros\nKowno, Gr. Wilnaerstr. 13. Tel. 338.\nSpezialhaus für Gummiwaren, Verbandstoffe,\nApotheker-Bedarfsartikel, kosmetische und\nToilette-Artikel.\nGeneralvertretung und Niederlage für Litauen und die\nandern Randstaaten der Fabriken:\nAmol-Werke-Hamburg.\nKluge & Pörkish, Leipzig, Effenzen und ätherische Öle.\nBrocard & Co. Parfümeriefabrik, Moskau-Paris.\nDr. Ernst Kuhnmann-Charlottenburg, Verbandstofffabrik.\nVerkauf zu Originalfabrikenpreisen.\nMan verlange Preislisten und Offerten.",
+    "thinking": null,
+    "images": null,
+    "tool_name": null,
+    "tool_calls": null
+  },
+  "logprobs": null
+}

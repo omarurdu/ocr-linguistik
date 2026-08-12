@@ -1,0 +1,21 @@
+{
+  "model": "deepseek-ocr:3b",
+  "created_at": "2026-08-11T16:56:41.892086724Z",
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 31442668256,
+  "load_duration": 434850460,
+  "prompt_eval_count": 305,
+  "prompt_eval_duration": 21508416000,
+  "eval_count": 226,
+  "eval_duration": 9215023000,
+  "message": {
+    "role": "assistant",
+    "content": "<|im_end|>\n# M. Otto Hesse\n## Berlin W. 9\n### Potsdamerstraße Nr. 141\n## Jovno\n### Siauliu g-vé. 14\nBeste und billigste Bezugsquelle für Motore in jeder 2rt und Größe in nur Friedensausführung, sowie sämtliche Innfallations-Materialien für Start- und Schwachstrom. Ferner Treiberinnen in jeder Ausführung, Seidengase für Mühlen. Sprügen und Schläuche für Feuerwehr, sowie alle dazu gehörigen Ausrüstungen. Automobile, Motorräder, Fahrräder, Mängel und Schläuche, Gummibäfälle billigst. Sämtliche landwirtschaftliche Maschinen, Cotomobilen, neu und gebraucht. Sägegatter, Kreislägen und Zubehörteile. Feldbahnen und Geleife dazu.\nFür reelle und schnelle Lieferung wird größte Sorge getragen.",
+    "thinking": null,
+    "images": null,
+    "tool_name": null,
+    "tool_calls": null
+  },
+  "logprobs": null
+}
