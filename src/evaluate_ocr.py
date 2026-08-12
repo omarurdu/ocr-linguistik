@@ -62,8 +62,10 @@ TRANSCRIPTIONS_DIR = PROJECT_ROOT / "output" / "transcriptions"
 METRICS_DIR = PROJECT_ROOT / "output" / "metrics"
 NORMALIZED_DIR = METRICS_DIR / "normalized"      # normalisierte Texte zum Nachprüfen
 DINGLEHOPPER_DIR = METRICS_DIR / "dinglehopper"  # HTML-Diffs für die Fehlertypologie
+# Sammelordner für alle Tabellen-Ausgaben des Projekts (CSV/MD/JSON).
+TABELLEN_DIR = PROJECT_ROOT / "output" / "tabellen"
 
-for d in (METRICS_DIR, NORMALIZED_DIR, DINGLEHOPPER_DIR):
+for d in (METRICS_DIR, NORMALIZED_DIR, DINGLEHOPPER_DIR, TABELLEN_DIR):
     d.mkdir(parents=True, exist_ok=True)
 
 ENCODING = "utf-8"
@@ -355,7 +357,7 @@ def main() -> None:
         return
 
     df = pd.DataFrame(rows)
-    out_csv = METRICS_DIR / "cer_wer_results.csv"
+    out_csv = TABELLEN_DIR / "cer_wer_results.csv"
     df.to_csv(out_csv, index=False)
     print(f"\n{len(df)} Zeilen gespeichert in {out_csv}")
 

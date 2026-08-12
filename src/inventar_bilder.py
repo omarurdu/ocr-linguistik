@@ -5,7 +5,7 @@ Bildinventar für die Materialbeschreibung (Hausarbeit: VLM-OCR über Ollama).
 Liest nur die Header-Metadaten aller Rasterbilder in einem Ordner und schreibt
 sie als CSV. Pixeldaten werden nicht dekodiert -> auch bei vielen Dateien schnell.
 
-Aufruf:  python bilder_inventar.py
+Aufruf:  python src/inventar_bilder.py
 """
 
 from __future__ import annotations
@@ -18,8 +18,12 @@ from PIL import Image, UnidentifiedImageError
 
 # ---------------------------------------------------------------- Einstellungen
 
-BILD_DIR = Path("data/images")
-OUT_CSV = Path("output/bilder_inventar.csv")
+# Pfade relativ zur Projektwurzel (eine Ebene ueber src/), damit der Aufrufort
+# keine Rolle spielt. TABELLEN_DIR sammelt alle CSV/MD-Ausgaben des Projekts.
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+BILD_DIR = PROJECT_ROOT / "data" / "images"
+TABELLEN_DIR = PROJECT_ROOT / "output" / "tabellen"
+OUT_CSV = TABELLEN_DIR / "bilder_inventar.csv"
 
 ZIEL_KANTE = 1540          # LightOnOCR-2: empfohlene längste Bildkante in px
 ENDUNGEN = {".png", ".jpg", ".jpeg", ".tif", ".tiff"}

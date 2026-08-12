@@ -2,11 +2,12 @@
 """
 inventar_modelle.py
 Liest die Metadaten der lokal installierten Ollama-Modelle aus und schreibt
+nach output/tabellen/:
   - modelle.md   (Tabelle fuer den Anhang der Hausarbeit)
   - modelle.json (Rohdaten zur Archivierung)
 
 Nur Standardbibliothek. Ollama muss laufen (ollama serve).
-Aufruf:  python3 inventar_modelle.py
+Aufruf:  python3 src/inventar_modelle.py
 """
 
 import json
@@ -19,7 +20,11 @@ from datetime import datetime
 from pathlib import Path
 
 OLLAMA = "http://localhost:11434"
-AUSGABE = Path(".")
+
+# Sammelordner fuer alle Tabellen-Ausgaben des Projekts (CSV/MD/JSON). Relativ
+# zur Projektwurzel, damit der Aufrufort keine Rolle spielt.
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+AUSGABE = PROJECT_ROOT / "output" / "tabellen"
 
 MODELS = [
     "qwen3-vl:4b-instruct",
@@ -193,6 +198,7 @@ def schreiben(zeilen, roh, fehlend):
     if fehlend:
         text += ["## Nicht gefunden", ""] + [f"- `{m}`" for m in fehlend] + [""]
 
+    AUSGABE.mkdir(parents=True, exist_ok=True)
     (AUSGABE / "modelle.md").write_text("\n".join(text), encoding="utf-8")
     (AUSGABE / "modelle.json").write_text(
         json.dumps({"erhebungsdatum": heute, "ollama_version": ollama_version(),
@@ -207,6 +213,7 @@ if __name__ == "__main__":
     except urllib.error.URLError as e:
         sys.exit(f"Ollama nicht erreichbar unter {OLLAMA} ({e}). Laeuft 'ollama serve'?")
     schreiben(zeilen, roh, fehlend)
-    print(f"{len(zeilen)} Modelle erfasst -> modelle.md, modelle.json")
+    print(f"{len(zeilen)} Modelle erfasst -> {AUSGABE / 'modelle.md'}, "
+          f"{AUSGABE / 'modelle.json'}")
     for m in fehlend:
         print(f"  NICHT GEFUNDEN: {m}")

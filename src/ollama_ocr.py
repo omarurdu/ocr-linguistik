@@ -1,8 +1,22 @@
 import ollama
 import json
+import sys
 import time
 import pandas as pd
 from pathlib import Path
+
+# Projektwurzel auf den Modul-Suchpfad, damit prompts/ importierbar ist -
+# unabhaengig davon, aus welchem Verzeichnis das Skript gestartet wird.
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+
+from prompts.prompts_base import (  # noqa: E402
+    PROMPT_ID_DSK,
+    PROMPT_ID_GEN,
+    PROMPT_ID_GLM,
+    PROMPT_ID_LIGHTON,
+    PROMPT_TEXTS,
+)
 
 # Kleinste Modelle zuerst, das große deepseek-ocr zuletzt (rein zur Sicherheit,
 # die Reihenfolge ist dank Entladen zwischen den Modellen aber egal).
@@ -18,30 +32,21 @@ MODELS = [
 ]
 
 # ---------------------------------------------------------------------------
-# Prompts: einheitlich innerhalb der Generalisten, Task-Praefixe laut Modelcard
-# bei den OCR-Spezialisten. Herkunft je Prompt in PROMPT_META dokumentiert.
+# Prompt-Zuordnung: hier steht nur, WELCHER Prompt an welches Modell geht. Die
+# Texte selbst und ihre Herkunft (PROMPT_META) liegen in
+# prompts/prompts_base.py, gemeinsam mit frontier_ocr.py. Generalisten bekommen
+# einheitlich P-GEN-01, die OCR-Spezialisten ihr Task-Praefix laut Modelcard.
 # ---------------------------------------------------------------------------
 
-PROMPT_GEN = (
-    "Transkribiere den gesamten sichtbaren Text auf diesem Bild, exakt und ohne Kommentar, ohne Formatierung oder Zusätze."
-)
-
-PROMPTS = {
-    "qwen3-vl:4b-instruct":               ("P-GEN-01", PROMPT_GEN),
-    "qwen3-vl:8b-instruct":               ("P-GEN-01", PROMPT_GEN),
-    "gemma4:e4b":                ("P-GEN-01", PROMPT_GEN),
-    "qwen3.5:4b":                ("P-GEN-01", PROMPT_GEN),
-    "minicpm-v4.5:8b":           ("P-GEN-01", PROMPT_GEN),
-    "maternion/lightonocr-2:1b": ("P-OCR-LIGHTON-01", ""),
-    "glm-ocr:bf16":              ("P-OCR-GLM-01", "Text Recognition:"),
-    "deepseek-ocr:3b":           ("P-OCR-DSK-01", "Free OCR."),
-}
-
-PROMPT_META = {
-    "P-GEN-01":         "eigene Formulierung; einheitlich fuer alle generalistischen VLMs",
-    "P-OCR-LIGHTON-01": "Modelcard lightonai/LightOnOCR-2-1B: Beispiel uebergibt nur das Bild, keinen Text",
-    "P-OCR-GLM-01":     "Modelcard zai-org/GLM-OCR: 'Text Recognition:'",
-    "P-OCR-DSK-01":     "Modelcard deepseek-ai/DeepSeek-OCR: '<image>\\nFree OCR.'; Bildtoken setzt Ollama selbst",
+PROMPT_BY_MODEL = {
+    "qwen3-vl:4b-instruct":      PROMPT_ID_GEN,
+    "qwen3-vl:8b-instruct":      PROMPT_ID_GEN,
+    "gemma4:e4b":                PROMPT_ID_GEN,
+    "qwen3.5:4b":                PROMPT_ID_GEN,
+    "minicpm-v4.5:8b":           PROMPT_ID_GEN,
+    "maternion/lightonocr-2:1b": PROMPT_ID_LIGHTON,
+    "glm-ocr:bf16":              PROMPT_ID_GLM,
+    "deepseek-ocr:3b":           PROMPT_ID_DSK,
 }
 
 # Modelle mit thinking-Capability laut Modellinventar (Tabelle A).
@@ -67,16 +72,16 @@ GEN_OPTIONS = {
     "num_ctx": 8192,         # groesster Wert, den alle acht Modelle unterstuetzen
 }
 
-# Alle Pfade relativ zur Projektwurzel (eine Ebene über src/)
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+# Alle Pfade relativ zur Projektwurzel (eine Ebene über src/, oben gesetzt)
 IMAGES_DIR = PROJECT_ROOT / "data" / "images"
 OUTPUT_DIR = PROJECT_ROOT / "output"
 TRANSCRIPTIONS_DIR = OUTPUT_DIR / "transcriptions"
 RAW_DIR = OUTPUT_DIR / "raw"
-TRANSCRIPTIONS_DIR.mkdir(parents=True, exist_ok=True)
-RAW_DIR.mkdir(parents=True, exist_ok=True)
+# Sammelordner fuer alle Tabellen-Ausgaben des Projekts (CSV/MD/JSON).
+TABELLEN_DIR = OUTPUT_DIR / "tabellen"
 
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+for _d in (TRANSCRIPTIONS_DIR, RAW_DIR, TABELLEN_DIR):
+    _d.mkdir(parents=True, exist_ok=True)
 
 image_paths = sorted(IMAGES_DIR.glob("*.png"))
 if not image_paths:
@@ -161,7 +166,8 @@ def resp_to_dict(resp):
 results = []
 
 for model in MODELS:
-    prompt_id, prompt_text = PROMPTS[model]
+    prompt_id = PROMPT_BY_MODEL[model]
+    prompt_text = PROMPT_TEXTS[prompt_id]
     print(f"\n===== Modell: {model} (Prompt {prompt_id}) =====")
     for image_path in image_paths:
         print(f"--- Teste {model} auf {image_path.name} ---")
@@ -232,8 +238,10 @@ for model in MODELS:
     unload_model(model)
 
 df = pd.DataFrame(results)
-df.to_csv(OUTPUT_DIR / "ocr_results.csv", index=False)
+ergebnis_csv = TABELLEN_DIR / "ocr_results.csv"
+df.to_csv(ergebnis_csv, index=False)
 print(df[["model", "image", "prompt_id", "done_reason", "eval_count", "seconds"]])
+print(f"\nGeschrieben: {ergebnis_csv}")
 
 # Abgeschnittene Laeufe sind fuer die CER-Auswertung unbrauchbar -> sofort sichtbar machen
 truncated = df[df.get("done_reason").eq("length")] if "done_reason" in df else None

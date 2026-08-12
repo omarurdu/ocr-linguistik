@@ -1,12 +1,12 @@
 """
 Erzeugt aus den normalisierten Transkripten zwei Auswertungen:
 
-  1. output/metrics/fehlerliste.csv
+  1. output/tabellen/fehlerliste.csv
      Eine Zeile pro zusammenhaengendem Fehler, mit Kontext und
      Zeichenoperationen. Die Spalte 'typ' ist LEER und wird von Hand mit
      A-E gefuellt. Das ist die Arbeitsgrundlage fuer die Fehlertypologie.
 
-  2. output/metrics/konfusionsmatrix.csv
+  2. output/tabellen/konfusionsmatrix.csv
      Zeichenverwechslungen (gold -> hyp) mit Haeufigkeit, gesamt und je
      Modell. '∅' steht fuer Einfuegung bzw. Loeschung.
 
@@ -65,7 +65,9 @@ from dinglehopper import seq_align
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 METRICS_DIR = PROJECT_ROOT / "output" / "metrics"
-NORMALIZED_DIR = METRICS_DIR / "normalized"
+NORMALIZED_DIR = METRICS_DIR / "normalized"               # Eingabe aus evaluate_ocr.py
+# Sammelordner fuer alle Tabellen-Ausgaben des Projekts (CSV/MD/JSON).
+TABELLEN_DIR = PROJECT_ROOT / "output" / "tabellen"
 TYPOLOGIE_CSV = PROJECT_ROOT / "data" / "typologie.csv"   # Handklassifikation
 ENCODING = "utf-8"
 KONTEXT_TOKEN = 3                 # Gold-Woerter links und rechts des Fehlers
@@ -404,7 +406,8 @@ def main() -> None:
                "kontext", "zeichen_ops", "n_modelle", "verschiebung",
                "typ_vorschlag", "regel", "typ", "bemerkung"]
     df_f = df_f[spalten].sort_values(["image", "model", "gold_pos"])
-    df_f.to_csv(METRICS_DIR / "fehlerliste.csv", index=False)
+    TABELLEN_DIR.mkdir(parents=True, exist_ok=True)
+    df_f.to_csv(TABELLEN_DIR / "fehlerliste.csv", index=False)
 
     df_k = pd.DataFrame(konf_rows)
     matrix = (df_k.groupby(["gold_zeichen", "hyp_zeichen", "ebene"])
@@ -418,10 +421,10 @@ def main() -> None:
     je_modell = (df_k.groupby(["gold_zeichen", "hyp_zeichen", "model"])
                      .size().unstack(fill_value=0).reset_index())
     matrix = matrix.merge(je_modell, on=["gold_zeichen", "hyp_zeichen"])
-    matrix.to_csv(METRICS_DIR / "konfusionsmatrix.csv", index=False)
+    matrix.to_csv(TABELLEN_DIR / "konfusionsmatrix.csv", index=False)
 
-    print(f"{len(df_f)} Fehler        -> {METRICS_DIR / 'fehlerliste.csv'}")
-    print(f"{len(matrix)} Verwechslungen -> {METRICS_DIR / 'konfusionsmatrix.csv'}")
+    print(f"{len(df_f)} Fehler        -> {TABELLEN_DIR / 'fehlerliste.csv'}")
+    print(f"{len(matrix)} Verwechslungen -> {TABELLEN_DIR / 'konfusionsmatrix.csv'}")
 
     ohne_typ = (df_f.typ == "").sum()
     if ohne_typ:
